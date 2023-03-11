@@ -26,15 +26,17 @@ function App() {
   useEffect(()=>{
     console.log('Use Effect si running');
   },[])
+  
   return (
     <div className="App">
       <div className="background">
       <Header/>
+      <Home/>
 
       <Routes>
         <Route path="/" element={<Home/>}></Route> 
         <Route path='/About' element={<About/>}></Route>   
-        <Route path='/Shop' element={<Shop/>}></Route>       
+        <Route path='/Shop' element={<Shop/>}></Route>  
        </Routes>
 
       <Productlist products={products} deleteProduct={ deleteProduct } />
