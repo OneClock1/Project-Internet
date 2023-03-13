@@ -2,7 +2,7 @@ import React, { useState } from "react"
 
 import logo from "./logo.png"
 import "./Header.scss"
-
+import { Link } from "react-router-dom"
 
 const Header = () => {
     const [title, setTitle] = useState("Please, login!");
@@ -25,11 +25,11 @@ const Header = () => {
             </div>
         
         <nav className="nav">
-            <ul className="nav-list">
-            <li className="nav-item">Home</li>
-            <li className="nav-item">Shop</li>
-            <li className="nav-item">About</li>
-            <li className="nav-item">Contact</li>
+        <ul className="nav-list">
+            <li className="nav-item"><Link to="/"> Home</Link></li>
+            <li className="nav-item"><Link to="shop"> Shop</Link></li>
+            <li className="nav-item"><Link to="About"> About</Link></li>
+            <li className="nav-item"><Link to="Contact"> Contact</Link></li>
             </ul>
             
         </nav>
